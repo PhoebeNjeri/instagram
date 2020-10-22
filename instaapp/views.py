@@ -93,7 +93,7 @@ def search_results(request):
 
 
 
-@login_required(login_url='/accounts/login/'
+@login_required(login_url='/accounts/login/')
 def new_comment(request, image_id):
     current_user = request.user
     image = Image.objects.get(id=image_id)
